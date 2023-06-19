@@ -36,7 +36,7 @@ async def _(event):
     after_tr_text = translated.text
     #TODO: emojify the :
     # either here, or before translation
-    output_str = """**Translated By amit0128 **\n\nSource **( {} )**\n\nTranslation**( {} )**{}""".format(
+    output_str = """**Translated By Virat **\n\nSource **( {} )**\n\nTranslation**( {} )**{}""".format(
       translated.src, lan, after_tr_text
     )
     await vtx.edit(output_str)
