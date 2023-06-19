@@ -1,11 +1,11 @@
 import glob
 from pathlib import Path
-from madara.utils import load_plug
+from amit.utils import load_plug
 import logging
 from . import bot 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
-path = "madara/plugins/*.py"
+path = "amit/plugins/*.py"
 files = glob.glob(path)
 for name in files:
   with open(name) as a:
@@ -13,7 +13,7 @@ for name in files:
     plugs = pxt.stem
     load_plug(plugs.replace(".py", ""))
     
-print ("VIRAT BOT HAS STARTED & LOADED ALL PLUGINS ")   
+print ("AMIT BOT HAS STARTED & LOADED ALL PLUGINS ")   
 
 if __name__ == "__main__":
   bot.run_until_disconnected()
